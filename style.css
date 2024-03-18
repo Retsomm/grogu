@@ -1,0 +1,145 @@
+* {
+  transition: 0.5s;
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.scene {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #D26900;
+}
+.scene .title {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 50px;
+  margin: 0;
+  color: white;
+  opacity: 0;
+}
+.scene .title .question {
+  display: none;
+}
+
+.person .head {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: green;
+  border-radius: 130px 130px 130px 130px;
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+.person .head:hover {
+  transform: translateY(20px);
+}
+.person .head .ear1 {
+  z-index: 1;
+  position: absolute;
+  left: -150px;
+  top: 50px;
+  border-radius: 0px 0px 80px 80px;
+  width: 300px;
+  height: 80px;
+  background-color: green;
+}
+.person .head .ear1:hover {
+  transform: rotate(10deg);
+}
+.person .head .ear1 .ear11 {
+  position: absolute;
+  width: 130px;
+  height: 60px;
+  border-radius: 10px 50px;
+  background-color: #FFBD9D;
+  left: 20px;
+  top: 10px;
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1);
+}
+.person .head .ear2 {
+  z-index: 1;
+  position: absolute;
+  right: -150px;
+  top: 50px;
+  border-radius: 0px 0px 80px 80px;
+  width: 300px;
+  height: 80px;
+  background-color: green;
+}
+.person .head .ear2:hover {
+  transform: rotate(-10deg);
+}
+.person .head .ear2 .ear22 {
+  position: absolute;
+  width: 130px;
+  height: 60px;
+  border-radius: 50px 10px;
+  background-color: #FFBD9D;
+  right: 20px;
+  top: 10px;
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1);
+}
+.person .head .eyes .eye {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50px 50px;
+  margin-right: 5px;
+  margin-left: 15px;
+  top: 60px;
+  z-index: 999;
+  overflow: hidden;
+}
+.person .head .eyes .eyeball {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  border-radius: 30px;
+  left: 17px;
+  top: -6px;
+}
+.person .head .mouth {
+  width: 50px;
+  height: 20px;
+  background-color: #FF8F59;
+  z-index: 888;
+  left: 103px;
+  top: 65px;
+  border-radius: 10px;
+}
+.person .pot {
+  width: 300px;
+  height: 200px;
+  background-color: #C2C287;
+  margin-left: auto;
+  margin-right: auto;
+  top: -40px;
+  border-radius: 5px;
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1);
+}
+.person .pot:hover {
+  transform: translateY(20px);
+}
+.person .pot .top {
+  width: 350px;
+  height: 50px;
+  background-color: #C2C287;
+  left: -25px;
+  box-shadow: inset -10px -10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
